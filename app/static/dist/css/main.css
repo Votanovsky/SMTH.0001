@@ -1,0 +1,165 @@
+/* Импорты стилей */
+@import "btns.css";
+
+/* Шрифты */
+/* Основной (для текста) */
+@font-face {
+    font-family: "Optimus"; 
+    src: url("../../assets/fonts/OptimusPrinceps.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+/* Заголовочный */
+@font-face {
+    font-family: "OptimusBold"; 
+    src: url("../../assets/fonts/OptimusPrincepsSemiBold.ttf") format("truetype"); 
+    font-style: bold; 
+    font-weight: bold; 
+} 
+/* Без засечек */
+@font-face {
+    font-family: "MullerRegular"; 
+    src: url("../../assets/fonts/MullerRegular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+body {
+    font-family: "Optimus";
+    
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .cont {
+    flex: 1 0 auto;
+  }
+  .foot {
+    flex: 0 0 auto;
+  }
+
+h1, h2, h3, h4 {
+    font-family: "OptimusBold"; 
+    font-style: bold; 
+    font-weight: bold; 
+}
+
+.muller {
+    font-family: "MullerRegular"; 
+}
+.muller_menu {
+    font-family: "MullerRegular"; 
+    letter-spacing: -2%;
+}
+.contacts {
+    letter-spacing: -3%;
+}
+.apply {
+    background: url("../../assets/video/end.gif") 50% 50% no-repeat;
+    background-size: cover;
+}
+
+/* Родитель --> ребёнок */
+.ul-nav li {
+    margin-right: 40px;
+}
+.ul-nav li:last-child {
+    margin-right: 0;
+}
+.ul-nav--mob li {
+    margin-bottom: 25px;
+}
+.ul-nav--mob li:last-child {
+    margin-bottom: 0;
+}
+.ul-nav--mob li:hover {
+    opacity: .5;
+}
+.burger div {
+    width: 20px;
+    height: 1px;
+    background-color: #000;
+    margin-bottom: 5px;
+}
+.menu {
+    /* transform: translateY(-300px); */
+    /* display: none; */
+    
+}
+.blue {
+    color: #0091FA;
+}
+video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    height: 100vh;
+    width: 100vw;
+}
+/* .bg-blur {
+    background: rgba(255, 255, 255, 0.08);
+} */
+
+.by {
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+}
+
+/* Footeter */
+footer {
+    background: #F1F1F1;
+}
+
+.privacy {
+    font-size: 14px;
+}
+@media (max-width: 565px) { 
+    .privacy {
+        font-size: 10px;
+    }
+}
+.privacy span:last-child{
+    font-size: 12px;
+}
+@media (max-width: 565px) { 
+    .privacy span:last-child {
+        font-size: 8px;
+    }
+}
+/* Drop menu */
+
+.drop-rotation {
+    animation-name: rotation;
+    animation-duration: 2s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: linear; 
+}
+
+
+@keyframes rotation { 
+    0% {transform:rotate(0deg)} 
+    100% {transform:rotate(360deg)} 
+}
+
+.drop-scale {
+    animation-name: scale;
+    animation-duration: 2s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: linear; 
+}
+
+
+@keyframes scale { 
+    0% {transform:scale(1.1) rotate(0deg)} 
+    50% {transform:scale(0.1) rotate(360deg)} 
+    100% {transform:scale(0.1) rotate(0deg)} 
+}
+
+.fs32 {
+    font-size: 32px;
+}

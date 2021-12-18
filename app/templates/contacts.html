@@ -1,0 +1,46 @@
+<div class="flex flex-col wrap">
+    <div class="flex flex-col  items-center cont">
+        <h2 class="uppercase text-h4 sm:text-h2 pt-150 sm:pt-200 contacts text-center mb-50 sm:mb-80">
+            Contact us
+        </h2>
+    
+        <form action="" class="w-full px-25 sm:px-0 sm:w-580 mb-55 sm:mb-120">
+            <div class="mb-55 sm:mb-80">
+                <span class="flex flex-col items-start mb-30 sm:mb-40 ">
+                    <label class="mb-0 sm:mb-10 muller opacity-75 text-subtwo" for="">your name</label>
+                    <input class="placeholder-white bg-transparent text-body sm:text-subone outline-none border-b pb-5 sm:pb-10 border-white/50 opacity-50 focus:opacity-100 w-full" type="text" placeholder="">
+                </span>
+                <span class="flex flex-col items-start mb-30 sm:mb-40 ">
+                    <label class="mb-0 sm:mb-10 muller opacity-75 text-subtwo" for="">email</label>
+                    <input class="placeholder-white bg-transparent text-body sm:text-subone outline-none border-b pb-5 sm:pb-10 border-white/50 opacity-50 focus:opacity-100 w-full" type="text" placeholder="">
+                </span>
+            </div>
+            <div data-v-02dfb122="" class="wrap-button big-button glitch b-black mr-10 sm:mr-15">
+                <div class="glitch__inner">
+                  <div class="glitch__before">
+                    <div class="wrap-button__text">SEND</div>
+                  </div>
+                  <div class="glitch__text">
+                    <div class="wrap-button__text">SEND</div>
+                  </div>
+                  <div class="glitch__after">
+                    <div class="wrap-button__text">SEND</div>
+                  </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+    <!-- FOOTER  -->
+    <footer class="grow-0 w-full foot">
+        <div class="flex items-center justify-between px-20 py-15 sl:px-60 sl:py-30 w-full">
+            <div>
+                <a href="{{ url_for('index') }}"><img class="w-50 sm:w-100" src="{{ url_for('static', filename='assets/icons/logo2.svg') }}"></a>
+            </div>
+            
+            <div class="ml-auto flex flex-col items-end privacy text-three muller">
+                <span>© 2021, SMTH 0111</span>
+                <span><a href="#">Privacy policy</a></span>
+            </div>
+    </footer>
+</div>

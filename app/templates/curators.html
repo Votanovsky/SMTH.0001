@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="{{ url_for('static', filename='dist/css/tailwind.css') }}" rel="stylesheet">
+        <title>Document</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            body {
+                overflow-x: none;
+            }
+            canvas {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+            }
+            img {
+                margin-right: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <main class="flex">
+            {% set assets = [
+                "asset1.png",
+                "asset2.jpeg",
+                "asset3.jpg",
+                "asset4.jpg",
+                "currEx.png",
+                "drop1.png",
+                "drop2.png",
+                "logo.png"
+            ] %}
+            <div>
+                {% for i in range(assets|length // 2) %}
+                <img 
+                    src="{{ url_for('static', filename='assets/pictures/%s' % assets[i]) }}"
+                    class="m-4 h-20px w-20px">
+                {% endfor %}
+            </div>
+            <div class="mt-4">
+                {% for i in range(assets|length // 2, assets|length) %}
+                <img 
+                    src="{{ url_for('static', filename='assets/pictures/%s' % assets[i]) }}"
+                    class="m-4 h-20px w-20px">
+                {% endfor %}
+            </div>
+        </main>
+        <script src="{{ url_for('static', filename='js/pixi.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/curators.js') }}"></script>
+    </body>
+</html>

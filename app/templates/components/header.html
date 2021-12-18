@@ -1,0 +1,29 @@
+<header class="text-three uppercase text-caption fixed top-0 left-0 w-full z-10 muller_menu">
+    <div class="bg-two flex items-center justify-between px-20 py-15 absolute top-0 left-0 w-full z-10 sl:px-60 sl:py-30 bg-white sl:bg-opacity-10 backdrop-filter backdrop-blur-2xl">
+        <div>
+            <a href="{{ url_for('index') }}"><img class="w-50 sm:w-100" src="{{ url_for('static', filename='assets/icons/logo.svg') }}"></a>
+        </div>
+        <img class="block sl:hidden" src="{{ url_for('static', filename='assets/icons/date.svg') }}"></a>
+        <nav class="ml-auto sl:block hidden">
+            <ul class="flex ul-nav">
+                <li class="opacity-75"><a href="">mission</a></li>
+                <li class="opacity-75"><a href="">current exhibition</a></li>
+                <li class="relative"><img class="drop-rotation absolute left-30 -top-15 cursor-pointer" src="{{ url_for('static', filename='assets/icons/drop_menu.png') }}" alt=""><a href="">contact us</a></li>
+                <li class="opacity-75"><a href="">projects</a></li>
+            </ul>
+        </nav>
+        <div class="w-20 burger block sl:hidden">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <nav class="px-20 py-20 bg-white text-fxs bg-opacity-10 backdrop-filter mt-40 backdrop-blur-2xl menu block sl:hidden">
+        <ul class="flex flex-col text-center ul-nav--mob">
+            <li><a href="">mission</a></li>
+            <li><a href="">current exhibition</a></li>
+            <li><a href="">contact us</a></li>
+            <li><a href="">projects</a></li>
+        </ul>
+    </nav>
+</header>

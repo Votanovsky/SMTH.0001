@@ -1,0 +1,10 @@
+{% extends "admin/master.html" %}
+
+{% block tail %}
+<form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+    <p>{{ form.login.label }} {{ form.login() }}</p>
+    <p>{{ form.password.label }} {{ form.password() }}</p>
+    <p>{{ form.submit() }}</p>
+</form>
+{% endblock %}

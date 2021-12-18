@@ -1,0 +1,5 @@
+/app/static/node_modules/*
+! /app/static/node_modules/tailwindcss
+/venv
+/**/__pycache__/
+/migrations

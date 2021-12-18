@@ -1,0 +1,46 @@
+{% extends "admin/master.html" %}
+{% block tail %}
+<div class="container">
+    <header>
+        <h1>Welcome to the admin page!</h1>
+    </header>
+    <main>
+        <section class="container">
+            <h2>List of Instructions</h2>
+            <p>Please, follow these instructions when working with the dataset:</p>
+            <article>
+                <h3>Authors</h3>
+                <ul>
+                    <li>
+                        <h4>Create</h4>
+                        <p>When creating a new author instance, pass his or her name and path to avatar in the form fields and then hit submit.</p>
+                    </li>
+                    <li>
+                        <h4>Edit</h4>
+                        <p>If some of the author's data is incorrect, you can edit it easily with an "Edit" option. Change some incorrect data and then hit submit.</p>
+                    </li>
+                    <li>
+                        <h4>Delete</h4>
+                        <p>If the situation when you need to delete an author occurs, just delete the instance in the "Authors" tab. All data containing that author will delete relation to his or her instance automatically.</p>
+                    </li>
+                </ul>
+                <h3>Pictures</h3>
+                <ul>
+                    <li>
+                        <h4>Create</h4>
+                        <p>Before adding a picture, ensure all its authors are added to the database. After that pass in the picture's name and path to the original image, then select the exhibition, which it will be shown at, and the authors, who worked at it; hit the plus button if there's more than one author. After all is done, hit submit.</p>
+                    </li>
+                    <li>
+                        <h4>Edit</h4>
+                        <p>You can easily edit the picture's data if some data passed was incorrect. The instruction is pretty similar to one as if you worked with the authors.</p>
+                    </li>
+                    <li>
+                        <h4>Edit</h4>
+                        <p>You can easily edit the picture's data if some data passed was incorrect. The instruction is pretty similar to one as if you worked with the authors.</p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+</div>
+{% endblock %}

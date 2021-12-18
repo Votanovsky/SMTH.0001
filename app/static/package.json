@@ -1,0 +1,20 @@
+{
+  "name": "exhibition",
+  "version": "1.0.0",
+  "description": "Node modules provided for Flask better productivity",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Drames Studio",
+  "license": "ISC",
+  "dependencies": {
+    "css-loader": "^6.5.1",
+    "image-webpack-loader": "^8.0.1",
+    "style-loader": "^3.3.1",
+    "tailwindcss": "^2.2.19",
+    "three": "^0.135.0",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1"
+  }
+}
