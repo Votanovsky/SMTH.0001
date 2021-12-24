@@ -58,10 +58,12 @@ h1, h2, h3, h4 {
     letter-spacing: -3%;
 }
 .apply {
-    background: url("../../assets/video/end.gif") 50% 50% no-repeat;
-    background-size: cover;
+    background: url("../../assets/video/plashka_v2.gif") 50% 50% no-repeat;
+    /* object-fit: cover; */
 }
-
+/* .overlay {
+    background: rgba(0, 0, 0, 0.356);
+} */
 /* Родитель --> ребёнок */
 .ul-nav li {
     margin-right: 40px;

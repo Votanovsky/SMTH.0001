@@ -1,60 +1,120 @@
-<div class=" mt-130 px-90 pb-200">
-    <div class="flex items-start mb-85">
-        <img class="rounded-full w-116 h-116 mr-115" src="{{ url_for('static', filename='assets/icons/curator.png') }}" alt="">
-        <div class="mr-240">
-            <h4 class="uppercase text-h4 mb-25">Stephan Parshin</h4>
-            <div class="muller mb-5">Creator</div>
-            <a class="muller opacity-75" href="#">instagram_link</a>
-        </div>
-        <div class="muller w-450 opacity-75 ml-auto">
-            Некий текст ракрывающий всё главную и основную стуь проекта, сейчас он рыбный и служит для заполнения вот этого данного текстового блока. 
-        </div>
-    </div>
+<div class="mt-65 sl:mt-130 px-30 slx:px-90 pb-200">
 
-    <div class="border-t border-black opacity-25 mb-130"></div>
-
-    <div class="flex">
-        <img class="w-1/3 mr-130" src="{{ url_for('static', filename='assets/icons/project.png') }}" alt="">
-
-        <div class="w-2/3">
-            <div class="relative inline-block">
-                <h3 class="text-h3 uppercase mb-50">Projectname</h3>
-                <div class="text-subone uppercase absolute -top-10 -right-30">02</div>
-            </div>
-
-            <div class="flex items-start">
-                <div class="mr-100">
-                    <div class="text-subone  muller mb-10">21.09.2015</div>
-                    <div class="text-subone opacity-75 muller">Холст, масло</div>
+    <div class="project-item mb-60 sl:mb-200">
+        <!-- curator -->
+        <div class="flex flex-col sl:flex-row items-start mb-60 sl:mb-85">
+            <div class="flex items-start mb-30 sl:mb-0">
+                <img class="rounded-full w-100 h-100 sl:w-115 sl:h-115 mr-45 sl:mr-20 slx:mr-115" src="{{ url_for('static', filename='assets/icons/curator.png') }}" alt="">
+                <div class="sl:mr-100 slx:mr-240">
+                    <h4 class="uppercase text-subtwo sm:text-body sl:text-h4 mb-25">Stephan Parshin</h4>
+                    <div class="muller mb-5">Curator</div>
+                    <a class="muller opacity-75" href="#">@instagram_link</a>
                 </div>
+            </div>
+            <div class="muller w-full sl:w-1/2 slx:w-450 opacity-75 sl:ml-auto">
+                Некий текст ракрывающий всё главную и основную стуь проекта, сейчас он рыбный и служит для заполнения вот этого данного текстового блока. 
+            </div>
+        </div>
+        <!-- curator -->
+
+        <div class="border-t border-black opacity-25 mb-60 sl:mb-130"></div>
     
-                <div class="muller w-315 opacity-75 ml-auto">
+        <div>
+            <div class="flex slx:h-500 overflow-hidden">
+                <!-- project -->
+                <div class="h-115 w-1/2 sm:w-1/2 mr-auto pr-20">
+                    <img class="" src="{{ url_for('static', filename='assets/icons/project.png') }}" alt="">
+                </div>
+                
+    
+                <div class="w-2/3">
+                    <div class="relative inline-block">
+                        <h3 class="text-h4 sl:text-h3 uppercase mb-20 sm:mb-50">Project</h3>
+                        <div class="text-fxs sl:text-subone muller uppercase absolute top-0 -right-20 sl:-right-40">02</div>
+                    </div>
+        
+                    <div class="flex items-start flex-col sl:flex-row">
+                        <div class="mr-30 sl:mr-200">
+                            <div class="text-subtwo sm:text-subone  muller mb-10">21.09.2015</div>
+                            <div class="text-subtwo sm:text-subone opacity-75 muller">Холст, масло</div>
+                        </div>
+            
+                        <div class="muller sl:w-315 hidden sl:block opacity-75">
+                            Некий текст ракрывающий всё главную и основную стуь проекта, сейчас он рыбный и служит для заполнения вот этого данного текстового блока. 
+                        </div>
+                    </div>
+
+                    
+                    <!-- project -->
+    
+                    <div class="border-t border-black opacity-25 sl:mt-30 mb-60 sl:mb-30 hidden slx:block"></div>
+    
+                    <!-- artist1 -->
+                    <div class="hidden slx:block">
+                        <h4 class="uppercase text-h4 mb-50">
+                            artists
+                        </h4>
+                        <div class="flex">
+                            <div class="mr-50">
+                                <img class="rounded-full w-115 h-115 mb-20" src="{{ url_for('static', filename='assets/icons/artist.png') }}" alt="">
+                                <div class="muller opacity-75">
+                                    Stephan Parshin
+                                </div>
+                            </div>
+                            <div>
+                                <img class="rounded-full w-115 h-115 mb-20" src="{{ url_for('static', filename='assets/icons/artist.png') }}" alt="">
+                                <div class="muller opacity-75">
+                                    Stephan Parshin
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                    <!-- artist1 -->
+    
+                </div>
+            </div>
+            <!-- artistMobile -->
+            <div class="slx:hidden block">
+                <div class="muller block sl:hidden opacity-75  mt-45">
                     Некий текст ракрывающий всё главную и основную стуь проекта, сейчас он рыбный и служит для заполнения вот этого данного текстового блока. 
                 </div>
-            </div>
-
-            <div class="border-t border-black opacity-25 mt-30 mb-95"></div>
-
-            <div>
-                <h4 class="uppercase text-h4 mb-50">
+                <h4 class="uppercase text-body mt-45 mb-25">
                     artists
                 </h4>
-                <div class="flex">
-                    <div class="mr-50">
-                        <img class="rounded-full w-116 h-116 mb-20" src="{{ url_for('static', filename='assets/icons/artist.png') }}" alt="">
-                        <div class="muller opacity-75">
+                <div class="flex overflow-x-scroll whitespace-nowrap">
+                    <div class="mr-40 sm:mr-50 flex flex-col items-center">
+                        <img class="rounded-full w-70 h-70 sl:w-115 sl:h-115 mb-20" src="{{ url_for('static', filename='assets/icons/artist.png') }}" alt="">
+                        <div class="text-fxs muller opacity-75">
                             Stephan Parshin
                         </div>
                     </div>
-                    <div>
-                        <img class="rounded-full w-116 h-116 mb-20" src="{{ url_for('static', filename='assets/icons/artist.png') }}" alt="">
-                        <div class="muller opacity-75">
+                    <div class="mr-40 sm:mr-50 flex flex-col items-center">
+                        <img class="rounded-full w-70 h-70 sl:w-115 sl:h-115 mb-20" src="{{ url_for('static', filename='assets/icons/artist.png') }}" alt="">
+                        <div class="text-fxs muller opacity-75">
                             Stephan Parshin
                         </div>
                     </div>
-
+                    <div class="mr-40 sm:mr-50 flex flex-col items-center">
+                        <img class="rounded-full w-70 h-70 sl:w-115 sl:h-115 mb-20" src="{{ url_for('static', filename='assets/icons/artist.png') }}" alt="">
+                        <div class="text-fxs muller opacity-75">
+                            Stephan Parshin
+                        </div>
+                    </div>
+                    <div class="mr-40 sm:mr-50 flex flex-col items-center">
+                        <img class="rounded-full w-70 h-70 sl:w-115 sl:h-115 mb-20" src="{{ url_for('static', filename='assets/icons/artist.png') }}" alt="">
+                        <div class="text-fxs muller opacity-75">
+                            Stephan Parshin
+                        </div>
+                    </div>
+    
                 </div>
             </div>
+            <!-- artistMobile -->
         </div>
+        
+
+        
     </div>
+    
 </div>

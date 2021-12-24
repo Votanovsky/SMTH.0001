@@ -1,27 +1,30 @@
 <!-- wrapper -->
-<div class="absolute top-0 left-0 right-0 bottom-0 z-5 flex justify-center items-center text-white apply">
-    <div class="text-center sl:mt-120 w-335 sm:w-420 px-0 sm:px-15 py-20">
-        <h2 class="uppercase text-subone sm:text-h4 mb-5">apply now</h2>
-        <div class="text-subtwo sm:text-body mb-40 muller">Join us to creat art together</div>
+<div class="absolute top-0 left-0 right-0 bottom-0 z-5 flex justify-center items-center h-screnn w-sreen text-black">
+    <img src="{{ url_for('static', filename='assets/video/plashka_v2.gif') }}" class="absolute bottom-0 w-900 h-700" alt="">
 
+    <div class="w-full h-full z-10 flex justify-center items-center overlay">
+      <div class="text-center sl:mt-120 w-335 sm:w-420 px-0 sm:px-15 py-20 z-10">
+        <h2 class="uppercase text-subone sm:text-h4 opacity-75 mb-5">apply now</h2>
+        <div class="text-subtwo sm:text-body mb-40 muller opacity-75">Join us to creat art together</div>
+  
         <form action="">
             <span class="mt-40">
                 <span class="flex flex-col items-start mb-40 ">
                     <label class="mb-10 muller opacity-75 text-subtwo" for="">your name</label>
-                    <input class="placeholder-white bg-transparent text-caption outline-none border-b pb-10 border-white/50 opacity-50 focus:opacity-100 w-full" type="text" placeholder="">
+                    <input class="placeholder-black bg-transparent text-caption outline-none border-b pb-10 border-black/50 opacity-50 focus:opacity-100 w-full" type="text" placeholder="">
                 </span>
                 <span class="flex flex-col items-start mb-40 ">
                     <label class="mb-10 muller opacity-75 text-subtwo" for="">email</label>
-                    <input class="placeholder-white bg-transparent text-caption outline-none border-b pb-10 border-white/50 opacity-50 focus:opacity-100 w-full" type="text" placeholder="">
+                    <input class="placeholder-black bg-transparent text-caption outline-none border-b pb-10 border-black/50 opacity-50 focus:opacity-100 w-full" type="text" placeholder="">
                 </span>
                 <span class="flex flex-col items-start mb-40 ">
                     <label class="mb-10 muller opacity-75 text-subtwo" for="">portfolio</label>
-                    <input class="placeholder-white bg-transparent text-caption outline-none border-b pb-10 border-white/50 opacity-50 focus:opacity-100 w-full" type="text" placeholder="">
+                    <input class="placeholder-black bg-transparent text-caption outline-none border-b pb-10 border-black/50 opacity-50 focus:opacity-100 w-full" type="text" placeholder="">
                 </span>
             </span>
             <!-- <button class="uppercase text-subtwo py-15 w-185 rounded-lg border-2 mr-10">cancel</button>
             <button class="uppercase text-subtwo py-15 w-185 rounded-lg bg-white border-2 border-white blue">send</button> -->
-            <div data-v-02dfb122="" class="wrap-button base-button b-white glitch mr-10 sm:mr-15">
+            <div data-v-02dfb122="" class="wrap-button base-button b-black glitch mr-10 sm:mr-15">
                 <div class="glitch__inner">
                   <div class="glitch__before">
                     <div class="wrap-button__text">CANCEL</div>
@@ -34,7 +37,7 @@
                   </div>
                 </div>
             </div>
-            <div data-v-02dfb122="" class="wrap-button base-button b-white glitch glitch-blue">
+            <div data-v-02dfb122="" class="wrap-button base-button b-black glitch ">
                 <div class="glitch__inner">
                   <div class="glitch__before">
                     <div class="wrap-button__text">SEND</div>
@@ -48,5 +51,6 @@
                 </div>
             </div>
         </form>
+      </div>
     </div>
 </div>
